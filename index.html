@@ -56,8 +56,10 @@ body{
 }
 
 .header {
-    position: absolute;   
-    
+    position: absolute; 
+    top: 220px;   
+    left: 28%; 
+    margin: 0 auto;    
 }
 .red{
     color: #9E0A32;
@@ -76,6 +78,9 @@ body{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     gap: 5px;
+    position: relative;
+   
+    
 }
 
 .gallery__img {
@@ -120,7 +125,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 3; 
      margin: 0;
-    padding: 0;  
+    padding: 0;    
         
 }
 
@@ -394,6 +399,7 @@ ul{
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
+        
     }
     .header-first{
         font-size: 45px;
@@ -408,34 +414,31 @@ ul{
 .gallery__item--0, .gallery__item--33{
     height: 850px;
 }
+.header {
+    position: absolute; 
+    top: 200px;   
+    left: 30px; 
+    
+      
+}
  
 }
     </style>
     
 </head>
 <body>
-<!--
-<div class="video-wrapper">
-    <video class="video-wrapper-1" playsinline autoplay muted loop >
-        <source
-            src="https://my-bucket-1008.s3.amazonaws.com/IMG_0425.MOV"
-            type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-    <div class="header">
-        <h1 class="header-first"><span class="red">Th</span>anks for the<br> gorgeous trip <span class="red">;)</span></h1>
-        <h3 class="header-second">January 2023</h3>             
-    </div>
-</div>
--->
+
 <div class="container">
-    <div class="gallery">
+    <div class="gallery">        
+            <div class="header">
+                <h1 class="header-first"><span class="red">Th</span>anks for the<br> gorgeous trip <span class="red">;)</span></h1>                
+            </div>      
         <figure class="gallery__item gallery__item--0">
             <video class="gallery__video-1" playsinline autoplay muted loop style="width:100%">
                 <source src="https://my-bucket-1008.s3.amazonaws.com/IMG_0425.MOV" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
-        </figure>
+            </video>            
+        </figure>        
         <figure class="gallery__item gallery__item--1">
             <h2 class="marg-b font-2"> <span class="red">Tr</span>ip between waterfalls <span class="red">;)</span></h2>
             <p class="font-1 justify marg-b"> Our trip wasn't well planned, but I definitely know that it went better than if we had planned it. 
@@ -664,14 +667,7 @@ ul{
         
     </div>
 </div>
-<!--
-<div class="video-wrapper">
-    <video class="video-wrapper-1" playsinline autoplay muted loop>
-        <source src="https://my-bucket-1008.s3.amazonaws.com/IMG_0812.MOV" type="video/webm">
-        Your browser does not support the video tag.
-    </video>    
-</div>
--->
+
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANTEwlFTW6V-ZTC-ZQHIHhFk879wq6l2g&callback=initMap"> 
 </script>
